@@ -1,10 +1,9 @@
 
 import random
-import time
 
 contador = 0
 
-for contador in range (3):
+while contador < 3:
     contador = contador + 1
     numero = int(input("Escolha um número de 1 à 10: "))
     x = random.randint (1,10) 
@@ -12,9 +11,13 @@ for contador in range (3):
 
     if (numero == x ):
         print("Você ganhou!")
+        break
     elif (numero != x):
         print("Você errou!")
-    continue 
+        print("Chances usadas: {} " .format(contador))
+        
+    
+   
 
 
  
